@@ -33,7 +33,7 @@ export const changePassword = async (resetPasswordToken: string, password: strin
             id: user.id
         },
         data: {
-            passwordHash,
+            password:passwordHash,
             resetPasswordToken: null,
             resetPasswordTokenExpiry: null,
         }
